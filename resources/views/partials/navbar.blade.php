@@ -44,6 +44,6 @@
         <div class="{{ setActivo('home') }}"><a href="{{ route('home') }}">Home</a></div>
         <div class="{{ setActivo('servicios') }}{{ setActivo('servicios.show') }}{{ setActivo('servicios.create') }}
         {{ setActivo('servicios.edit') }} "><a href="{{ route('servicios') }}">Servicios</a></div>
-        <div class="{{ setActivo('contacto') }}"><a href="{{ route('contacto') }}">Contacto</a></div>
+        <div class="{{ setActivo('contacto') }}{{ setActivo('contacto.enviado') }}"><a href="{{ route('contacto') }}">Contacto</a></div>
     </div>
 </body>

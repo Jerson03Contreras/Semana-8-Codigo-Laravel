@@ -6,22 +6,25 @@
     <title>Nuevo Mensaje Recibido</title>
 </head>
 <body>
-<table border="0">
-    <tr>
-        <td colspan="2">Recibiste un correo del sistema automatico</td>
-    </tr>
-    <tr>
-        <td><b>Nombre</b></td><td>{{ $mensaje['nombre'] }}</td>
-    </tr>
-    <tr>
-        <td><b>Correo</b></td><td>{{ $mensaje['email'] }}</td>
-    </tr>
-    <tr>
-        <td><b>Asunto</b></td><td>{{ $mensaje['asunto']}}</td>
-    </tr>
-    <tr>
-        <td><b>Mensaje</b></td><td>{{ $mensaje['mensaje']}}</td>
-    </tr>
-</table>
+    <h1>Nuevo Mensaje Recibido</h1>
+    <p>Recibiste un correo del sistema automático con los siguientes detalles:</p>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Nombre</th>
+            <td>{{ $mensaje['nombre'] }}</td>
+        </tr>
+        <tr>
+            <th>Correo</th>
+            <td>{{ $mensaje['email'] }}</td>
+        </tr>
+        <tr>
+            <th>Asunto</th>
+            <td>{{ $mensaje['asunto']}}</td>
+        </tr>
+        <tr>
+            <th>Mensaje</th>
+            <td>{{ $mensaje['mensaje']}}</td>
+        </tr>
+    </table>
 </body>
 </html>

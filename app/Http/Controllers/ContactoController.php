@@ -43,8 +43,8 @@ class ContactoController extends Controller
         ]);
 
         // $details = $request->only(['nombre', 'email', 'asunto', 'mensaje']);
-        Mail::to('yosip.urquizo@gmail.com')->send(new MensajeRecibido($mensaje));
-        return 'Mensaje Enviado';
+        Mail::to('jacontrerasl@unitru.edu.pe')->queue(new MensajeRecibido($mensaje));
+        return view('contacto.enviado');
         //
     }
 
